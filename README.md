@@ -3,4 +3,4 @@
 
 
 # demo
-<iframe width="560" height="315" src="https://github.com/mahdyfarjad/Django-todoapp-FBV/assets/83094231/a0d88d0f-b24b-4b9b-9925-e2fedf143c90" frameborder="0" allowfullscreen></iframe>
+[![Watch the Demo]()]([https://github.com/your-username/your-repository/releases/download/v1.0/your-demo-video.mp4](https://github.com/mahdyfarjad/Django-todoapp-FBV/releases/download/demo/demo-todoapp2.mp4)https://github.com/mahdyfarjad/Django-todoapp-FBV/releases/download/demo/demo-todoapp2.mp4)
