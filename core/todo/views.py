@@ -6,6 +6,8 @@ from django.http import HttpResponse
 
 @login_required(login_url="/accounts/login/")
 def todo_list(request):
+    if request.user.is_authenticated:
+        print(request.user.username)
     context = {
         'tasks': Task.objects.filter(user=request.user),
     }

@@ -6,7 +6,9 @@ from django.contrib.auth import authenticate, login, logout
 
 def register(request):
     form = RegisterForm()
-
+    if request.user.is_authenticated:
+        return redirect('/todo/')
+    
     if request.method == 'POST':
         form = RegisterForm(request.POST)
         if form.is_valid():
@@ -19,11 +21,13 @@ def register(request):
     return render(request, 'accounts/register.html', context)
 
 def login_user(request):
+    if request.user.is_authenticated:
+        return redirect('/todo/')
+    
     if request.method == 'POST':
         username = request.POST.get('username')
         password = request.POST.get('password')
         user = authenticate(request, username=username, password=password)
-        
         if user is not None:
             login(request, user)
             return redirect('/todo/')
