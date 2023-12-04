@@ -1,3 +1,3 @@
 # django-todoapp-fbv
- this will be a todo app with Function Base views
+ this is a todoapp with django function base views
 
